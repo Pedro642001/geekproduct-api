@@ -4,7 +4,6 @@ Esse sistema é uma API desenvolvida em node.js para exeplificar um consulta de 
 # Como iniciar o projeto em desenvolvimento
 para iniciar o projeto será necessário utilizar os seguintes comandos:
 - yarn
-- docker-compose up
 - yarn dev:server
 
 # Requisitos da aplicação

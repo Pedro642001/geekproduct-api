@@ -1,6 +1,7 @@
 {
   "type": "mongodb",
   "port": 27017,
+  "url": "mongodb+srv://geekUser:geekPassword@mongodb.kcyla.mongodb.net/dbgeek?retryWrites=true&w=majority",
   "database": "dbgeek",
   "logging": false,
   "synchronize": true,
