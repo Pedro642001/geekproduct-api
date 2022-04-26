@@ -7,12 +7,12 @@
   "synchronize": true,
   "useUnifiedTopology": true,
   "entities": [
-    "src/modules/**/infra/typeorm/schemas/*.ts"
+    "dist/modules/**/infra/typeorm/schemas/*.js"
   ],
   "repository": [
-    "src/modules/**/infra/typeorm/repositories/*.ts"
+    "dist/modules/**/infra/typeorm/repositories/*.js"
   ],
   "cli": {
-    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+    "migrationsDir": "./dist/shared/infra/typeorm/migrations"
   }
 }

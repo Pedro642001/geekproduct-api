@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AuthenticateUserUseCase = void 0;
 
-var _UsersRepository = require("../../../../../dist/modules/users/infra/typeorm/repositories/UsersRepository");
+var _UsersRepository = require("../../infra/typeorm/repositories/UsersRepository");
 
 var _bcryptjs = require("bcryptjs");
 
@@ -13,7 +13,7 @@ var _jsonwebtoken = _interopRequireDefault(require("jsonwebtoken"));
 
 var _tsyringe = require("tsyringe");
 
-var _AppError = require("../../../../../dist/shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _dec, _dec2, _dec3, _dec4, _class;
 

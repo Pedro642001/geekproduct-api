@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.usersRoutes = void 0;
 
-var _ensureAuthenticated = require("../../../../../dist/modules/users/middlewares/ensureAuthenticated");
+var _ensureAuthenticated = require("../../../../modules/users/middlewares/ensureAuthenticated");
 
-var _createUserController = require("../../../../../dist/modules/users/useCases/createUser/createUserController");
+var _createUserController = require("../../../../modules/users/useCases/createUser/createUserController");
 
-var _createFavoriteProductController = require("../../../../../dist/modules/users/useCases/updateFavoriteProduct/createFavoriteProductController");
+var _createFavoriteProductController = require("../../../../modules/users/useCases/updateFavoriteProduct/createFavoriteProductController");
 
 var _express = require("express");
 

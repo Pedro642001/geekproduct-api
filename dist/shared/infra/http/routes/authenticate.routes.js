@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.authenticateRoutes = void 0;
 
-var _authenticateUserController = require("../../../../../dist/modules/users/useCases/AuthenticateUser/authenticateUserController");
+var _authenticateUserController = require("../../../../modules/users/useCases/AuthenticateUser/authenticateUserController");
 
 var _express = require("express");
 

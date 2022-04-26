@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateFavoriteProductUseCase = void 0;
 
-var _ProductsRepository = require("../../../../../dist/modules/products/infra/typeorm/repositories/ProductsRepository");
+var _ProductsRepository = require("../../../products/infra/typeorm/repositories/ProductsRepository");
 
-var _UsersRepository = require("../../../../../dist/modules/users/infra/typeorm/repositories/UsersRepository");
+var _UsersRepository = require("../../infra/typeorm/repositories/UsersRepository");
 
 var _tsyringe = require("tsyringe");
 
-var _AppError = require("../../../../../dist/shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _dec, _dec2, _dec3, _dec4, _dec5, _class;
 

@@ -7,7 +7,7 @@ exports.UpdateProductImageController = void 0;
 
 var _tsyringe = require("tsyringe");
 
-var _AppError = require("../../../../../dist/shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _UpdateProductImageUseCase = require("./UpdateProductImageUseCase");
 

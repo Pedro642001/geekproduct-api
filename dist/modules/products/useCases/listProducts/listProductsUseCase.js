@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ListProductsUseCase = void 0;
 
-var _ProductsRepository = require("../../../../../dist/modules/products/infra/typeorm/repositories/ProductsRepository");
+var _ProductsRepository = require("../../infra/typeorm/repositories/ProductsRepository");
 
 var _tsyringe = require("tsyringe");
 

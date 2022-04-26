@@ -5,13 +5,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.UpdateProductImageUseCase = void 0;
 
-var _IProductsRepository = require("../../../../../dist/modules/products/repositories/IProductsRepository");
+var _IProductsRepository = require("../../repositories/IProductsRepository");
 
-var _file = require("../../../../../dist/utils/file");
+var _file = require("../../../../utils/file");
 
 var _tsyringe = require("tsyringe");
 
-var _AppError = require("../../../../../dist/shared/errors/AppError");
+var _AppError = require("../../../../shared/errors/AppError");
 
 var _dec, _dec2, _dec3, _dec4, _class;
 

@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.productRoutes = void 0;
 
-var _upload = _interopRequireDefault(require("../../../../../dist/config/upload"));
+var _upload = _interopRequireDefault(require("../../../../config/upload"));
 
-var _CreateProductController = require("../../../../../dist/modules/products/useCases/createProduct/CreateProductController");
+var _CreateProductController = require("../../../../modules/products/useCases/createProduct/CreateProductController");
 
-var _listProductsController = require("../../../../../dist/modules/products/useCases/listProducts/listProductsController");
+var _listProductsController = require("../../../../modules/products/useCases/listProducts/listProductsController");
 
-var _UpdateProductImageController = require("../../../../../dist/modules/products/useCases/updateProductImage/UpdateProductImageController");
+var _UpdateProductImageController = require("../../../../modules/products/useCases/updateProductImage/UpdateProductImageController");
 
-var _ensureAuthenticated = require("../../../../../dist/modules/users/middlewares/ensureAuthenticated");
+var _ensureAuthenticated = require("../../../../modules/users/middlewares/ensureAuthenticated");
 
 var _express = require("express");
 

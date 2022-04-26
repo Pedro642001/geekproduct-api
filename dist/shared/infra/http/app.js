@@ -17,7 +17,7 @@ require("../../container/index");
 
 require("../typeorm");
 
-var _AppError = require("../../../../dist/shared/errors/AppError");
+var _AppError = require("../../errors/AppError");
 
 var _routes = require("./routes");
 

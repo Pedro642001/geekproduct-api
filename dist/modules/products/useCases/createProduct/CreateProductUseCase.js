@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CreateProductUseCase = void 0;
 
-var _IProductsRepository = require("../../../../../dist/modules/products/repositories/IProductsRepository");
+var _IProductsRepository = require("../../repositories/IProductsRepository");
 
 var _tsyringe = require("tsyringe");
 
