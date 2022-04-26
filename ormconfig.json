@@ -1,0 +1,17 @@
+{
+  "type": "mongodb",
+  "port": 27017,
+  "database": "dbgeek",
+  "logging": false,
+  "synchronize": true,
+  "useUnifiedTopology": true,
+  "entities": [
+    "src/modules/**/infra/typeorm/schemas/*.ts"
+  ],
+  "repository": [
+    "src/modules/**/infra/typeorm/repositories/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/typeorm/migrations"
+  }
+}
