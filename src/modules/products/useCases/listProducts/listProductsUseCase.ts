@@ -1,7 +1,6 @@
+import { ProductsRepository } from "@modules/products/infra/typeorm/repositories/ProductsRepository";
+import { Product } from "@modules/products/infra/typeorm/schemas/product";
 import { inject, injectable } from "tsyringe";
-
-import { ProductsRepository } from "../../infra/typeorm/repositories/ProductsRepository";
-import { Product } from "../../infra/typeorm/schemas/product";
 
 @injectable()
 export class ListProductsUseCase {

@@ -1,10 +1,9 @@
-import { Product } from "modules/products/infra/typeorm/schemas/product";
+import { ProductsRepository } from "@modules/products/infra/typeorm/repositories/ProductsRepository";
+import { ICreateFavoriteProductDTO } from "@modules/users/dtos/ICreateProductFavoriteDTO";
+import { UsersRepository } from "@modules/users/infra/typeorm/repositories/UsersRepository";
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "../../../../shared/errors/AppError";
-import { ProductsRepository } from "../../../products/infra/typeorm/repositories/ProductsRepository";
-import { ICreateFavoriteProductDTO } from "../../dtos/ICreateProductFavoriteDTO";
-import { UsersRepository } from "../../infra/typeorm/repositories/UsersRepository";
+import { AppError } from "@shared/errors/AppError";
 
 @injectable()
 export class CreateFavoriteProductUseCase {

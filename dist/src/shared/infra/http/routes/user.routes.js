@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.usersRoutes = void 0;
+var ensureAuthenticated_1 = require("@modules/users/middlewares/ensureAuthenticated");
+var createUserController_1 = require("@modules/users/useCases/createUser/createUserController");
+var createFavoriteProductController_1 = require("@modules/users/useCases/updateFavoriteProduct/createFavoriteProductController");
+var express_1 = require("express");
+var usersRoutes = (0, express_1.Router)();
+exports.usersRoutes = usersRoutes;
+var createUserController = new createUserController_1.CreateUserController();
+var createFavoriteProduct = new createFavoriteProductController_1.CreateFavoriteProductController();
+usersRoutes.post("/", createUserController.handle);
+usersRoutes.post("/favorite-product", ensureAuthenticated_1.ensureAuthenticated, createFavoriteProduct.handle);

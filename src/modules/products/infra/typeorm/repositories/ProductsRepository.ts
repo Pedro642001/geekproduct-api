@@ -1,7 +1,7 @@
-import { ICreateProductDTO } from "modules/products/dtos/createProductDTO";
-import { IUpdateProductDTO } from "modules/products/dtos/updateProductDTO";
-import { IProductsReposository } from "modules/products/repositories/IProductsRepository";
-import { getMongoRepository, MongoRepository, ObjectID } from "typeorm";
+import { ICreateProductDTO } from "@modules/products/dtos/createProductDTO";
+import { IUpdateProductDTO } from "@modules/products/dtos/updateProductDTO";
+import { IProductsReposository } from "@modules/products/repositories/IProductsRepository";
+import { getMongoRepository, MongoRepository } from "typeorm";
 
 import { Product } from "../schemas/product";
 

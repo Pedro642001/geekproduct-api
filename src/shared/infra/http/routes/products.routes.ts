@@ -1,11 +1,10 @@
+import uploadConfig from "@config/upload";
+import { CreateProductController } from "@modules/products/useCases/createProduct/CreateProductController";
+import { ListProductsController } from "@modules/products/useCases/listProducts/listProductsController";
+import { UpdateProductImageController } from "@modules/products/useCases/updateProductImage/UpdateProductImageController";
+import { ensureAuthenticated } from "@modules/users/middlewares/ensureAuthenticated";
 import { Router } from "express";
 import multer from "multer";
-
-import uploadConfig from "../../../../config/upload";
-import { CreateProductController } from "../../../../modules/products/useCases/createProduct/CreateProductController";
-import { ListProductsController } from "../../../../modules/products/useCases/listProducts/listProductsController";
-import { UpdateProductImageController } from "../../../../modules/products/useCases/updateProductImage/UpdateProductImageController";
-import { ensureAuthenticated } from "../../../../modules/users/middlewares/ensureAuthenticated";
 
 const productRoutes = Router();
 

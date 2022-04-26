@@ -1,8 +1,7 @@
+import { ICreateProductDTO } from "@modules/products/dtos/createProductDTO";
+import { Product } from "@modules/products/infra/typeorm/schemas/product";
+import { IProductsReposository } from "@modules/products/repositories/IProductsRepository";
 import { inject, injectable } from "tsyringe";
-
-import { ICreateProductDTO } from "../../dtos/createProductDTO";
-import { Product } from "../../infra/typeorm/schemas/product";
-import { IProductsReposository } from "../../repositories/IProductsRepository";
 
 @injectable()
 export class CreateProductUseCase {

@@ -1,9 +1,9 @@
+import { UsersRepository } from "@modules/users/infra/typeorm/repositories/UsersRepository";
 import { compare } from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "../../../../shared/errors/AppError";
-import { UsersRepository } from "../../infra/typeorm/repositories/UsersRepository";
+import { AppError } from "@shared/errors/AppError";
 
 interface IRequest {
   email: string;

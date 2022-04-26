@@ -1,8 +1,8 @@
+import { IProductsReposository } from "@modules/products/repositories/IProductsRepository";
+import { deleteFile } from "@utils/file";
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "../../../../shared/errors/AppError";
-import { deleteFile } from "../../../../utils/file";
-import { IProductsReposository } from "../../repositories/IProductsRepository";
+import { AppError } from "@shared/errors/AppError";
 
 interface IRequest {
   product_id: string;

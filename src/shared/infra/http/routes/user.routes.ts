@@ -1,8 +1,7 @@
+import { ensureAuthenticated } from "@modules/users/middlewares/ensureAuthenticated";
+import { CreateUserController } from "@modules/users/useCases/createUser/createUserController";
+import { CreateFavoriteProductController } from "@modules/users/useCases/updateFavoriteProduct/createFavoriteProductController";
 import { Router } from "express";
-
-import { ensureAuthenticated } from "../../../../modules/users/middlewares/ensureAuthenticated";
-import { CreateUserController } from "../../../../modules/users/useCases/createUser/createUserController";
-import { CreateFavoriteProductController } from "../../../../modules/users/useCases/updateFavoriteProduct/createFavoriteProductController";
 
 const usersRoutes = Router();
 
