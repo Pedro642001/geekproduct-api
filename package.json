@@ -1,10 +1,12 @@
 {
   "name": "geekproducts-API",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/Pedro642001/geekproduct-api.git",
   "author": "Pedro Henrique de Sousa <44080081+Pedro642001@users.noreply.github.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">= 7.0.0"
+  },
   "scripts": {
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files",
     "start": "node dist/shared/infra/http/server.js",
