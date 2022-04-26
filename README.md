@@ -1,7 +1,7 @@
 # Descrição do sistema
 Esse sistema é uma API desenvolvida em node.js exeplificar um consulta de produtos,autenticação de usuário e funcionalidade para favoritar um produto.
 
-## Como iniciar o projeto em desenvolvimento
+# Como iniciar o projeto em desenvolvimento
 para iniciar o projeto será necessário utilizar os seguintes comandos:
 - yarn
 - docker-compose up
