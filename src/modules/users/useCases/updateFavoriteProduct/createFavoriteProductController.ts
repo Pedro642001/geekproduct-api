@@ -7,6 +7,7 @@ export class CreateFavoriteProductController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { products_ids } = request.body;
     const { id: user_id } = request.user;
+    console.log(products_ids);
 
     const createfavoriteProduct = container.resolve(
       CreateFavoriteProductUseCase

@@ -14,14 +14,12 @@ export class UsersRepository implements IUsersRepository {
   }
 
   async create({
-    id,
     name,
     email,
     password,
     favorites_products,
   }: ICreateUserDTO): Promise<User> {
     const user = this.ormRepository.create({
-      id,
       name,
       email,
       password,
@@ -32,15 +30,15 @@ export class UsersRepository implements IUsersRepository {
 
     return user;
   }
-  async update({ id, ...data }: User): Promise<void> {
-    await this.ormRepository.update(id, data);
+  async update({ _id, ...data }: User): Promise<void> {
+    await this.ormRepository.update(_id, data);
   }
   async findByEmail(email: string): Promise<User | undefined> {
     const user = await this.ormRepository.findOne({ where: { email } });
     return user;
   }
-  async findById(id: string): Promise<User | undefined> {
-    const user = await this.ormRepository.findOne(id);
+  async findById(_id: string): Promise<User | undefined> {
+    const user = await this.ormRepository.findOne(_id);
     return user;
   }
 }

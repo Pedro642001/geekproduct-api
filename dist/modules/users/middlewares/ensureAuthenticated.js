@@ -23,7 +23,7 @@ async function ensureAuthenticated(request, response, next) {
   try {
     const {
       sub: user_id
-    } = (0, _jsonwebtoken.verify)(token, "09da5a9ff2dbbfd1273248fee0ae1b71");
+    } = (0, _jsonwebtoken.verify)(token, process.env.KEY_TOKEN);
     const usersRepository = new _UsersRepository.UsersRepository();
     const user = await usersRepository.findById(user_id);
 

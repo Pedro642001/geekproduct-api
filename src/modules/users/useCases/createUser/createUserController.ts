@@ -11,6 +11,6 @@ export class CreateUserController {
 
     const newUser = await createUser.execute({ name, email, password });
 
-    return response.status(201).json(newUser);
+    return response.status(201).send();
   }
 }

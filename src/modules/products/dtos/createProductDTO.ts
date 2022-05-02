@@ -1,7 +1,7 @@
 import { ObjectID } from "typeorm";
 
 export interface ICreateProductDTO {
-  id?: ObjectID;
+  _id?: ObjectID;
   name: string;
   description: string;
   image_url?: string;

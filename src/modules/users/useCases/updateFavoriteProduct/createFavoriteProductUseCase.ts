@@ -31,8 +31,6 @@ export class CreateFavoriteProductUseCase {
     }
 
     user.favorites_products = favoritesProducts;
-    console.log(favoritesProducts);
-    console.log(user.favorites_products);
 
     await this.usersRepository.update(user);
   }

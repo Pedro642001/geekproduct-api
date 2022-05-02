@@ -17,6 +17,7 @@ class CreateFavoriteProductController {
     const {
       id: user_id
     } = request.user;
+    console.log(products_ids);
 
     const createfavoriteProduct = _tsyringe.container.resolve(_createFavoriteProductUseCase.CreateFavoriteProductUseCase);
 

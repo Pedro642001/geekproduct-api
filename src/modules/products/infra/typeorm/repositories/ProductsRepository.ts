@@ -28,15 +28,15 @@ export class ProductsRepository implements IProductsReposository {
     return newProduct;
   }
   async update({
-    id,
+    _id,
     description,
     name,
     image_url,
   }: IUpdateProductDTO): Promise<void> {
-    await this.ormRepository.update(id, { description, name, image_url });
+    await this.ormRepository.update(_id, { description, name, image_url });
   }
-  async findById(id: string): Promise<Product | undefined> {
-    const product = await this.ormRepository.findOne(id);
+  async findById(_id: string): Promise<Product | undefined> {
+    const product = await this.ormRepository.findOne(_id);
 
     return product;
   }

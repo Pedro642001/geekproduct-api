@@ -21,7 +21,8 @@ interface IResponse {
 @injectable()
 export class AuthenticateUserUseCase {
   constructor(
-    @inject("UsersRepository") private usersRepository: UsersRepository
+    @inject("UsersRepository")
+    private usersRepository: UsersRepository
   ) {}
 
   async execute({ email, password }: IRequest): Promise<IResponse> {
@@ -37,8 +38,8 @@ export class AuthenticateUserUseCase {
       throw new AppError("Email or password invalid", 401);
     }
 
-    const token = jwt.sign({}, "09da5a9ff2dbbfd1273248fee0ae1b71", {
-      subject: String(user.id),
+    const token = jwt.sign({}, process.env.KEY_TOKEN, {
+      subject: user._id.toHexString(),
       expiresIn: "3d",
     });
 

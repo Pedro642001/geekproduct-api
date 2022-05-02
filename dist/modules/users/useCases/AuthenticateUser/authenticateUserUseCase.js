@@ -42,8 +42,8 @@ let AuthenticateUserUseCase = (_dec = (0, _tsyringe.injectable)(), _dec2 = funct
       throw new _AppError.AppError("Email or password invalid", 401);
     }
 
-    const token = _jsonwebtoken.default.sign({}, "09da5a9ff2dbbfd1273248fee0ae1b71", {
-      subject: String(user.id),
+    const token = _jsonwebtoken.default.sign({}, process.env.KEY_TOKEN, {
+      subject: user._id.toHexString(),
       expiresIn: "3d"
     });
 

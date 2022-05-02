@@ -79,7 +79,7 @@ var AuthenticateUserUseCase = /** @class */ (function () {
                         if (!passwordMatch) {
                             throw new AppError_1.AppError("Email or password invalid", 401);
                         }
-                        token = jsonwebtoken_1.default.sign({}, "09da5a9ff2dbbfd1273248fee0ae1b71", {
+                        token = jsonwebtoken_1.default.sign({}, process.env.KEY_TOKEN, {
                             subject: String(user.id),
                             expiresIn: "3d",
                         });

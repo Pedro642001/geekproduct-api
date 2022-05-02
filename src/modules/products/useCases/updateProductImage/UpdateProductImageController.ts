@@ -8,7 +8,7 @@ import { UpdateProductImageUseCase } from "./UpdateProductImageUseCase";
 export class UpdateProductImageController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { id } = request.body;
-    const imageFile = request.file?.filename;
+    const imageFile = request.file.filename;
 
     if (!imageFile) {
       throw new AppError("image not found!");

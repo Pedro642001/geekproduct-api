@@ -16,7 +16,7 @@ class UpdateProductImageController {
     const {
       id
     } = request.body;
-    const imageFile = request.file?.filename;
+    const imageFile = request.file.filename;
 
     if (!imageFile) {
       throw new _AppError.AppError("image not found!");

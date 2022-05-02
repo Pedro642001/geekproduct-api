@@ -13,19 +13,16 @@ var _path = require("path");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+const tmpFolder = (0, _path.resolve)(__dirname, "..", "..", "tmp/productImage");
 var _default = {
-  upload(folder) {
-    return {
-      storage: _multer.default.diskStorage({
-        destination: (0, _path.resolve)(__dirname, "..", "..", folder),
-        filename: (request, file, callback) => {
-          const fileHash = (0, _crypto.randomBytes)(16).toString("hex");
-          const fileName = `${fileHash}-${file.originalname}`;
-          return callback(null, fileName);
-        }
-      })
-    };
-  }
-
+  tmpFolder,
+  storage: _multer.default.diskStorage({
+    destination: (0, _path.resolve)(__dirname, "..", "..", "tmp/productImage"),
+    filename: (request, file, callback) => {
+      const fileHash = (0, _crypto.randomBytes)(16).toString("hex");
+      const fileName = `${fileHash}-${file.originalname}`;
+      return callback(null, fileName);
+    }
+  })
 };
 exports.default = _default;

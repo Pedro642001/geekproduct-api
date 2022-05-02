@@ -8,7 +8,7 @@ import multer from "multer";
 
 const productRoutes = Router();
 
-const uploadProductImage = multer(uploadConfig.upload("./tmp/productImage"));
+const uploadProductImage = multer(uploadConfig);
 const createProductController = new CreateProductController();
 const uploadProductImageController = new UpdateProductImageController();
 const listProductsController = new ListProductsController();

@@ -77,8 +77,6 @@ var CreateFavoriteProductUseCase = /** @class */ (function () {
                             throw new AppError_1.AppError("User not found");
                         }
                         user.favorites_products = favoritesProducts;
-                        console.log(favoritesProducts);
-                        console.log(user.favorites_products);
                         return [4 /*yield*/, this.usersRepository.update(user)];
                     case 3:
                         _b.sent();

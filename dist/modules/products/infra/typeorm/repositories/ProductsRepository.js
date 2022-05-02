@@ -30,20 +30,20 @@ class ProductsRepository {
   }
 
   async update({
-    id,
+    _id,
     description,
     name,
     image_url
   }) {
-    await this.ormRepository.update(id, {
+    await this.ormRepository.update(_id, {
       description,
       name,
       image_url
     });
   }
 
-  async findById(id) {
-    const product = await this.ormRepository.findOne(id);
+  async findById(_id) {
+    const product = await this.ormRepository.findOne(_id);
     return product;
   }
 

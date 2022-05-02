@@ -11,7 +11,7 @@ import {
 @Entity("products")
 export class Product {
   @ObjectIdColumn()
-  id?: ObjectID;
+  _id?: ObjectID;
 
   @Column()
   name: string;

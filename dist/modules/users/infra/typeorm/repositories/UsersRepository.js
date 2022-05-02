@@ -16,14 +16,12 @@ class UsersRepository {
   }
 
   async create({
-    id,
     name,
     email,
     password,
     favorites_products
   }) {
     const user = this.ormRepository.create({
-      id,
       name,
       email,
       password,
@@ -34,10 +32,10 @@ class UsersRepository {
   }
 
   async update({
-    id,
+    _id,
     ...data
   }) {
-    await this.ormRepository.update(id, data);
+    await this.ormRepository.update(_id, data);
   }
 
   async findByEmail(email) {
@@ -49,8 +47,8 @@ class UsersRepository {
     return user;
   }
 
-  async findById(id) {
-    const user = await this.ormRepository.findOne(id);
+  async findById(_id) {
+    const user = await this.ormRepository.findOne(_id);
     return user;
   }
 

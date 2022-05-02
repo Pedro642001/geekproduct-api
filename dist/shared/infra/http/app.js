@@ -11,6 +11,8 @@ var _cors = _interopRequireDefault(require("cors"));
 
 var _express = _interopRequireDefault(require("express"));
 
+require("dotenv/config");
+
 require("express-async-errors");
 
 require("../../container/index");

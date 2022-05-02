@@ -19,7 +19,7 @@ function _initializerWarningHelper(descriptor, context) { throw new Error('Decor
 
 let User = (_dec = (0, _typeorm.Entity)("users"), _dec2 = (0, _typeorm.ObjectIdColumn)(), _dec3 = Reflect.metadata("design:type", typeof _typeorm.ObjectID === "undefined" ? Object : _typeorm.ObjectID), _dec4 = (0, _typeorm.Column)(), _dec5 = Reflect.metadata("design:type", String), _dec6 = (0, _typeorm.Column)(), _dec7 = Reflect.metadata("design:type", String), _dec8 = (0, _typeorm.Column)(), _dec9 = Reflect.metadata("design:type", String), _dec10 = (0, _typeorm.CreateDateColumn)(), _dec11 = Reflect.metadata("design:type", typeof Date === "undefined" ? Object : Date), _dec12 = (0, _typeorm.UpdateDateColumn)(), _dec13 = Reflect.metadata("design:type", typeof Date === "undefined" ? Object : Date), _dec14 = (0, _typeorm.Column)(type => _product.Product), _dec15 = Reflect.metadata("design:type", Array), _dec(_class = (_class2 = class User {
   constructor() {
-    _initializerDefineProperty(this, "id", _descriptor, this);
+    _initializerDefineProperty(this, "_id", _descriptor, this);
 
     _initializerDefineProperty(this, "name", _descriptor2, this);
 
@@ -34,7 +34,7 @@ let User = (_dec = (0, _typeorm.Entity)("users"), _dec2 = (0, _typeorm.ObjectIdC
     _initializerDefineProperty(this, "favorites_products", _descriptor7, this);
   }
 
-}, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "id", [_dec2, _dec3], {
+}, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "_id", [_dec2, _dec3], {
   configurable: true,
   enumerable: true,
   writable: true,

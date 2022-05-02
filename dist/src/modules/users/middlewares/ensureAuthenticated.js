@@ -54,7 +54,7 @@ function ensureAuthenticated(request, response, next) {
                     _c.label = 1;
                 case 1:
                     _c.trys.push([1, 3, , 4]);
-                    user_id = (0, jsonwebtoken_1.verify)(token, "09da5a9ff2dbbfd1273248fee0ae1b71").sub;
+                    user_id = (0, jsonwebtoken_1.verify)(token, process.env.KEY_TOKEN).sub;
                     usersRepository = new UsersRepository_1.UsersRepository();
                     return [4 /*yield*/, usersRepository.findById(user_id)];
                 case 2:

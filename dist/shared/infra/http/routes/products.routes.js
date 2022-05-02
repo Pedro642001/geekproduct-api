@@ -23,7 +23,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const productRoutes = (0, _express.Router)();
 exports.productRoutes = productRoutes;
-const uploadProductImage = (0, _multer.default)(_upload.default.upload("./tmp/productImage"));
+const uploadProductImage = (0, _multer.default)(_upload.default);
 const createProductController = new _CreateProductController.CreateProductController();
 const uploadProductImageController = new _UpdateProductImageController.UpdateProductImageController();
 const listProductsController = new _listProductsController.ListProductsController();
